@@ -4,8 +4,8 @@
 from odoo import fields, models
 
 
-class ProductPackagingType(models.Model):
-    _inherit = "product.packaging.type"
+class ProductPackagingLevel(models.Model):
+    _inherit = "product.packaging.level"
 
     is_vendor_packaging = fields.Boolean(
         string="Vendor Packaging",

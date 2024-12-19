@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <record id="view_product_packaging_type_tree" model="ir.ui.view">
-        <field name="name">product.vendor.packaging.type.tree</field>
-        <field name="model">product.packaging.type</field>
+    <record id="view_product_packaging_level_list" model="ir.ui.view">
+        <field name="name">product.vendor.packaging.level.list</field>
+        <field name="model">product.packaging.level</field>
         <field name="priority" eval="8" />
         <field
             name="inherit_id"
-            ref="product_packaging_type.view_product_packaging_type_tree"
+            ref="product_packaging_level.view_product_packaging_level_list"
         />
         <field name="arch" type="xml">
             <field name="code" position="after">
@@ -14,12 +14,12 @@
             </field>
         </field>
     </record>
-    <record id="view_product_packaging_type_form" model="ir.ui.view">
-        <field name="name">product.vendor.packaging.type.form</field>
-        <field name="model">product.packaging.type</field>
+    <record id="view_product_packaging_level_form" model="ir.ui.view">
+        <field name="name">product.vendor.packaging.level.form</field>
+        <field name="model">product.packaging.level</field>
         <field
             name="inherit_id"
-            ref="product_packaging_type.view_product_packaging_type_form"
+            ref="product_packaging_level.view_product_packaging_level_form"
         />
         <field name="arch" type="xml">
             <field name="code" position="after">
